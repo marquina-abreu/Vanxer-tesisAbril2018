@@ -1,0 +1,41 @@
+
+#Error{
+
+	background-image:url(imagenes/no.jpg);
+
+	background-repeat:no-repeat;
+
+	background-position:left; 
+
+	color:#FF0000; 
+
+	padding-left:33px; 
+
+	height:19px; 
+
+	padding-top:6px;
+
+	padding-right:10px;
+
+	}
+
+#Success{
+
+	background-image:url(imagenes/yes.jpg);
+
+	background-repeat:no-repeat;
+
+	background-position:left; 
+
+	color:#669933; 
+
+	padding-left:33px; 
+
+	height:19px; 
+
+	padding-top:6px;
+
+	padding-right:10px;
+
+	}
+

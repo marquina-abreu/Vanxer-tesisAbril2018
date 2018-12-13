@@ -1,0 +1,508 @@
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+.loader {
+  position: absolute;
+  top: 45%;
+  left: 47%;
+
+  width: 70px;
+  height: 70px;
+  border: 10px solid black;
+  border-top: 10px solid red;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*HEADER*/
+.navbar {
+	margin-bottom:10px;
+
+}
+.dropdown>li >a {
+  color: white;
+}
+/*Mini menus (dropdown)*/
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: white;
+  text-decoration: none;
+  background-color:#FE2E2E;
+}
+.dropdown-menu > #cerrar > a{
+  color: white;
+}
+.dropdown-menu > #solvente > a{
+  color: white;
+}
+.dropdown-menu > #solvente> a:hover,
+.dropdown-menu > #solvente> a:focus {
+  color: white;
+  text-decoration: none;
+  background-color:green;
+
+}
+.dropdown-menu > #insolvente > a{
+  color: white;
+}
+.dropdown-menu > #insolvente> a:hover,
+.dropdown-menu > #insolvente> a:focus {
+  color: white;
+  text-decoration: none;
+  background-color:orange;
+
+}
+.dropdown-menu > #cerrar > a:hover,
+.dropdown-menu > #cerrar > a:focus {
+  color: white;
+  text-decoration: none;
+  background-color:red;
+
+}
+div#navegacion-trans >.nav >.dropdown:hover {
+    background-color:#FA5858;
+}
+
+
+/*modal personalizado*/
+.modal-dialog-personalizado {
+    position: relative;
+    width: 30% ;
+    margin: 10px auto;
+  }
+/*Cuando haga hover en el Aside*/
+.list-group >a:hover{
+    background-color:#428BCA;
+    color: white;
+}
+
+.modal.fade .modal-dialog-personalizado {
+  -webkit-transition: -webkit-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
+          transition:         transform .3s ease-out;
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+       -o-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+.modal.in .modal-dialog-personalizado {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+/*modal para movil*/
+@media (max-width: 768px) {
+
+  div#navegacion-trans >.nav >.dropdown > .dropdown-menu>li:hover {
+    padding: 08px 14px;
+    background-color:black;
+   }
+  div#navegacion-trans >.nav >.dropdown > .dropdown-menu>li>a {
+   color:white;
+  }
+
+  .modal-dialog-personalizado {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+  /*slideshow*/
+  .carousel-indicators {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+}
+
+/*PERSONALIZANDO EL form-control(bostrap) de los input*/
+.form-control{
+  display: block;
+  width: 80%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+/*botones*/
+.btn-primary-personalizado {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary-personalizado:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+  }
+
+/*ESTILO DE BARRA SOCIAL*/
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.social {
+	position:fixed;
+	left:0;
+	top:200px;
+	z-index:2000;
+}
+
+.social ul {
+	list-style:none;
+}
+
+.social ul li a{
+	display:inline-block;
+	color:#fff;
+	background:#000;
+	text-decoration:none;
+	padding:10px 15px;
+}
+
+.social ul li .icon-facebook2 {
+	background:#3b5998;
+}
+.social ul li .icon-instagram {
+	background:purple;
+}
+.social ul li .icon-twitter {
+	background:#00abf0;
+}
+.social ul li .icon-google-plus3 {
+	background:#d95232;
+}
+
+/*EFECTO DE CRECIMIENTO ... HOVER*/
+.social ul li a:hover {
+	padding:10px 30px;
+}
+/*Transicion*/
+.social ul li a{
+	-webkit- transition:all 500ms ease;
+	-o- transition:all 500ms ease;
+	-moz- transition:all 500ms ease;
+	transition:all 500ms ease;
+
+}
+
+/*PAGINACION DE NOTICIAS*/
+
+
+.post {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+}
+.post .post-title a{
+  color: black;
+  text-decoration: none;
+
+}
+
+.post .thumb {
+  margin-right: 10px;
+  width: 40%;
+}
+
+/*para la img*/
+.post .thumb img {
+  width: 100%;
+}
+
+/*cuando sea en dispositivo movil... la img..*/
+
+@media screen and (max-width: 768px) {
+  .post .thumb {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+.postt{
+  width: 100%;
+  background:#fff;
+  box-shadow: 0px 0px 5px rgba(0,0,0, .5);
+  margin-bottom: 30px;
+  padding: 30px;
+
+
+}
+.paginacionn ul {
+  list-style: none;
+}
+
+.paginacionn ul li {
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+.paginacionn ul .active a {
+  background:#428BCA; 
+
+}
+
+.paginacionn ul .disabled a {
+  background: #c8c8c8;
+  display: inline-block;
+  padding: 12px 20px;
+  cursor: not-allowed; /* el allowed es para que salga el simbolo de "no" al momento de hacer atras estando en la pag #1*/
+  color: #fff;
+  text-decoration: none;
+}
+
+.paginacionn ul li a {
+  display: inline-block;
+  padding: 12px 20px;
+  background:#424242;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.paginacionn ul li a:hover {
+  text-decoration: none;
+  background:#428BCA; 
+}
+@media (max-width: 468px) {
+  
+
+.paginacionn ul li {
+  margin-right: 5px;
+}
+
+.paginacionn ul .disabled a {
+  padding: 8px 12px;
+}
+
+.paginacionn ul li a {
+  padding: 8px 15px;
+}
+}
+
+
+.spa{
+   color:#FA5858;
+}
+
+hr { 
+   
+   border-top: 2px solid #050100; 
+   border-bottom: 2px solid #EE0315; 
+   border-left:none; 
+   border-right:none; 
+   height: 6px; 
+ } 
+
+ .hr2 { 
+   
+   border-top: 2px solid white; 
+   border-bottom: 2px solid #EE0315; 
+   border-left:none; 
+   border-right:none; 
+   height: 6px; 
+ } 
+
+/*Estilos de cajas de comentarios de noticias*/
+.comen {
+    font-family: helvetica,verdana, sans-serif;
+    
+}
+
+.comments-container  h1{
+    font-size: 36px;
+    color: #283035;
+
+}
+
+.comments-list {
+    margin-top: 30px;
+    position: relative;
+}
+
+.comments-list li{
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+
+}
+.comments-list li:after { 
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+}
+
+.comments-list .comment-avatar {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    z-index: 99;
+    float: left;
+    border:3px solid #fff;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+ .comments-list .comment-avatar img {
+    width: 100%;
+    height:100%;
+    }
+
+/*CAJA DE COMENTARIO*/
+
+.comments-list.comment-box {
+    width: 600px;
+    float: right;
+    position: relative;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+
+.comments-list.comment-box:before, .comments-list.comment-box:after {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    display: block;
+    border-width: 10px 12px 10px 0;
+    border-style: solid;
+    border-color: transparent #FCFCFC;
+    top: 0;
+    left: 0;
+
+}
+
+.comments-list.comment-box:before {
+    border-width: 10px 12px 10px 0;
+    border-color: transparent rgba(0,0,0,0.05);
+    left: -12px;
+
+
+}
+.comment-box .comment-head {
+    background: #dee1e3;
+    padding: 10px 12px;
+    border-bottom: 1px solid #E5E5E5;
+    overflow: hidden;
+    -webkit-border-radius:4px 4px 0 0;
+    -moz-border-radius:4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+
+}
+
+.comment-box .comment-name {
+    color: #283035;
+    font-size: 13px;
+    font-weight: 700;
+    float: left;
+    margin-right: 16px;
+}
+
+.comment-box .comment-name a{
+    color: #283035;
+
+    }
+
+.comment-box .comment-head span {
+    float: left;
+    color: #999;
+    font-size: 12px;
+    position: relative;
+    top: 9px;
+}
+.comment-box .comment-content {
+    background: #fff;
+    padding: 12px;
+    color: #595959;
+    font-size: 14px;
+    -webkit-border-radius:0 0 4px 4px;
+    -moz-border-radius:0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.comment-box .comment-name .by-author , .comment-box .comment-name .by-author a{
+    color: #03658c;
+}
+.comment-box .comment-name .by-author:after {
+    background: #03658c;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 3px;
+} 
